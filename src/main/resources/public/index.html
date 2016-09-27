@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--
+	Retrospect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html ng-app="app">
+
+<head>
+    <title>Polymorphic Coders</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+
+<body class="landing" ng-controller='homecontroller'>
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <h1><a href="index.html">Polymorphic Coders</a></h1>
+        <a href="#nav">Menu</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generic.html">About Us</a></li>
+            <li><a href ng-click="scrollTo('ourClients')">Our Clients</a></li>
+            <li><a href ng-click="scrollTo('contactUs')">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div ng-view></div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <li>
+                    <a href="#" class="icon fa-facebook">
+                        <span class="label">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-twitter">
+                        <span class="label">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-instagram">
+                        <span class="label">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="icon fa-linkedin">
+                        <span class="label">LinkedIn</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; Untitled.</li>
+                <li>Images: <a href="http://unsplash.com">Unsplash</a>.</li>
+                <li>Design: <a href="http://templated.co">TEMPLATED</a>.</li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/homecontroller.js"></script>
+
+</body>
+
+</html>
