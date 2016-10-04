@@ -3,6 +3,8 @@ package com.polymorphiccoders;
 import static spark.Spark.get;
 import static spark.Spark.post;
 
+import com.google.gson.Gson;
+
 public class Resource {
 
 	private static final String API_CONTEXT = "/api/v1/polymorphoiccoders";
@@ -26,6 +28,8 @@ public class Resource {
 		// JsonTransformer());
 		
 		//get("/", (request, response) -> "Hello, World!");
+		
+		get(API_CONTEXT + "/getClients", (request, response) -> new Gson().toJson(service.getClients()));
 
 	}
 

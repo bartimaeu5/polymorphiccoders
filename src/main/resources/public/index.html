@@ -28,9 +28,9 @@
     <nav id="nav">
         <ul class="links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="generic.html">About Us</a></li>
+            <li><a href="#aboutus">About Us</a></li>
             <li><a href ng-click="scrollTo('ourClients')">Our Clients</a></li>
-            <li><a href ng-click="scrollTo('contactUs')">Contact Us</a></li>
+            <li><a href dropdown-toggle ng-click="scrollTo('contactUs')">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -62,7 +62,7 @@
                 </li>
             </ul>
             <ul class="copyright">
-                <li>&copy; Untitled.</li>
+                <li>&copy; Polymorphic Coders.</li>
                 <li>Images: <a href="http://unsplash.com">Unsplash</a>.</li>
                 <li>Design: <a href="http://templated.co">TEMPLATED</a>.</li>
             </ul>
@@ -78,7 +78,10 @@
     <script src="scripts/angular.min.js"></script>
     <script src="scripts/angular-route.min.js"></script>
     <script src="app/app.js"></script>
+    <script src="app/services/customercontact.js"></script>
+    <script src="app/services/clients.js"></script>
     <script src="app/controllers/homecontroller.js"></script>
+    <script src="app/controllers/aboutuscontroller.js"></script>
 
 </body>
 

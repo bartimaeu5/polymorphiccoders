@@ -8,6 +8,10 @@
                 templateUrl: '/app/partials/main.html',
                 controller: 'homecontroller'
             })
+            .when('/aboutus', {
+                templateUrl: '/app/partials/aboutus.html',
+                controller: 'aboutuscontroller'
+            })
             .otherwise({
                 redirectTo: '/main'
             });
